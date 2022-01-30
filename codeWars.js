@@ -148,3 +148,12 @@ function withoutLast(arr) {
               }
               return contador;
             }
+
+            //Décima quarta questão
+
+            function abbrevName(name){
+
+              let [primeiroNome, segundoNome] = name.toUpperCase().split(' ');
+              return primeiroNome[0] + '.' + segundoNome[0];
+              
+            }
