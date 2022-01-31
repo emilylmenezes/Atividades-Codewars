@@ -157,3 +157,21 @@ function withoutLast(arr) {
               return primeiroNome[0] + '.' + segundoNome[0];
               
             }
+
+            //Décima quinta questão
+            function reverseWords(str) {
+              // Go for it
+                
+                let mudePalavras = '';
+                let troqueString = '';
+              
+                for (let i = 0; i < str.length; i++) {
+                if (str[i] !== ' ') {
+                 mudePalavras = str[i] + mudePalavras;
+                } else {
+                  troqueString += mudePalavras + ' ';
+                  mudePalavras = '';
+                }
+              }
+              return troqueString  + mudePalavras;
+            }
